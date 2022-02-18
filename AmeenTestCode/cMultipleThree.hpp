@@ -16,7 +16,7 @@ class cMultipleThree {
 public:
     cMultipleThree();
     cMultipleThree(int);
-    int getNum();
+    int getNum() const;
     void setNum(int);
     cMultipleThree& operator++();
     cMultipleThree operator++(int);

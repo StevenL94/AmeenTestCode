@@ -34,6 +34,7 @@ int main(int argc, const char * argv[]) {
     cout << "n1 = " << n1 << endl;
     n1 = n2++;
     cout << "n1 = " << n1 << " n2 = " << n2 << endl;
+//    int var = -5 - n1;
     int var = -5 - n1.getNum();
     cout << "n1 = " << n1 << " var = " << var << endl;
     n3 = (--n1) +2;

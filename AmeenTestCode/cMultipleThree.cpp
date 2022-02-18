@@ -22,7 +22,7 @@ cMultipleThree::cMultipleThree(int n) {
     }
 }
 
-int cMultipleThree::getNum() {
+int cMultipleThree::getNum() const {
     return num;
 }
 
