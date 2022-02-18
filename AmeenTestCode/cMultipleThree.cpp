@@ -86,31 +86,41 @@ cMultipleThree cMultipleThree::operator-(cMultipleThree& rhs) const {
 }
 
 cMultipleThree cMultipleThree::operator+(int rhs) const {
-    if ((num + rhs) < 0) {
+    int sum = num + rhs;
+    if (sum < 0) {
         std::cout << "code 5: +/- yielding a negative number" << std::endl;
         return cMultipleThree();
     }
     else {
-        if (num%3 != 0) {
-            int rem = num%3;
-            return cMultipleThree(num+(3-rem));
+        if (sum%3 == 0) {
+            return cMultipleThree(sum);
+        }
+        else {
+            int rem = sum%3;
+            int disFromThree = 3-rem;
+            sum += disFromThree;
+            return cMultipleThree(sum);
         }
     }
-    return cMultipleThree(num+rhs);
 }
 
 cMultipleThree cMultipleThree::operator-(int rhs) const {
-    if ((num - rhs) < 0) {
+    int diff = num - rhs;
+    if (diff < 0) {
         std::cout << "code 5: +/- yielding a negative number" << std::endl;
         return cMultipleThree();
     }
     else {
-        if (num%3 != 0) {
-            int rem = num%3;
-            return cMultipleThree(num - (3-rem));
+        if (num%3 == 0) {
+            return cMultipleThree(num - rhs);
+        }
+        else {
+            int rem = diff%3;
+            int disFromThree = 3-rem;
+            diff -= disFromThree;
+            return cMultipleThree(diff);
         }
     }
-    return cMultipleThree(num - rhs);
 }
 
 std::ostream& operator<<(std::ostream& os, const cMultipleThree& cMT) {
