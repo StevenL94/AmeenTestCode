@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		565D22A527BEBB690070EB9F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 565D22A427BEBB690070EB9F /* main.cpp */; };
+		565D22AD27BEBBD50070EB9F /* cMultipleThree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 565D22AB27BEBBD50070EB9F /* cMultipleThree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		565D22A127BEBB690070EB9F /* testcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		565D22A427BEBB690070EB9F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		565D22AB27BEBBD50070EB9F /* cMultipleThree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cMultipleThree.cpp; sourceTree = "<group>"; };
+		565D22AC27BEBBD50070EB9F /* cMultipleThree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cMultipleThree.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				565D22A427BEBB690070EB9F /* main.cpp */,
+				565D22AB27BEBBD50070EB9F /* cMultipleThree.cpp */,
+				565D22AC27BEBBD50070EB9F /* cMultipleThree.hpp */,
 			);
 			path = testcode;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				565D22AD27BEBBD50070EB9F /* cMultipleThree.cpp in Sources */,
 				565D22A527BEBB690070EB9F /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
